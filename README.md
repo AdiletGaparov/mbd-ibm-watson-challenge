@@ -1,6 +1,6 @@
 ## Configuring the application
 
-1. JSON file is located here:
+1. Import IBM Watson skill to your IBM Watson assistant instance. JSON file is located here:
 
     `<project_root>/skill-json-file/skill-teamD.json`
 

@@ -1,0 +1,1955 @@
+{
+  "name": "El Corte Ingles",
+  "intents": [
+    {
+      "intent": "no",
+      "examples": [
+        {
+          "text": "not sure"
+        },
+        {
+          "text": "no, i am not sure"
+        },
+        {
+          "text": "No"
+        }
+      ],
+      "description": "Intent for \"no\""
+    },
+    {
+      "intent": "replay_button",
+      "examples": [
+        {
+          "text": "changed my mind"
+        },
+        {
+          "text": "more free stuff"
+        },
+        {
+          "text": "want to come back to game"
+        },
+        {
+          "text": "come back to game"
+        },
+        {
+          "text": "let's play again"
+        },
+        {
+          "text": "sounds fun, let's come back to game"
+        },
+        {
+          "text": "what other questions you have got for me?"
+        },
+        {
+          "text": "want to win points"
+        },
+        {
+          "text": "want to get bonus"
+        },
+        {
+          "text": "give me more free stuff"
+        }
+      ],
+      "description": "Intent to come back to game"
+    },
+    {
+      "intent": "correct_answer_diapers_Q2",
+      "examples": [
+        {
+          "text": "Czech Republic"
+        },
+        {
+          "text": "Czech"
+        },
+        {
+          "text": "Czechia"
+        }
+      ],
+      "description": "Intent to identify the correct answer for question #1 in game with antecedent: diapers"
+    },
+    {
+      "intent": "correct_answer_diapers_Q3",
+      "examples": [
+        {
+          "text": "conservas asensio"
+        },
+        {
+          "text": "asensio conservas"
+        },
+        {
+          "text": "Asensio"
+        }
+      ],
+      "description": "Intent to identify the correct answer for question #3 in game with antecedent: diapers"
+    },
+    {
+      "intent": "first_positive_interaction",
+      "examples": [
+        {
+          "text": "Hi!"
+        },
+        {
+          "text": "hola"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "Hello!"
+        },
+        {
+          "text": "Nice!"
+        },
+        {
+          "text": "Hola!"
+        },
+        {
+          "text": "Que tal?"
+        }
+      ],
+      "description": "Intent to get first interaction"
+    },
+    {
+      "intent": "hint",
+      "examples": [
+        {
+          "text": "give me the hint"
+        },
+        {
+          "text": "help me please"
+        },
+        {
+          "text": "give me a clue"
+        },
+        {
+          "text": "hint"
+        },
+        {
+          "text": "no clue"
+        },
+        {
+          "text": "no idea"
+        },
+        {
+          "text": "have no idea"
+        },
+        {
+          "text": "have no clue"
+        }
+      ],
+      "description": "Intent to identify request for hint"
+    },
+    {
+      "intent": "stop_button",
+      "examples": [
+        {
+          "text": "need to go"
+        },
+        {
+          "text": "don't have time"
+        },
+        {
+          "text": "want to finish the game"
+        },
+        {
+          "text": "don't want to continue"
+        },
+        {
+          "text": "want to finish it"
+        }
+      ],
+      "description": "Intent to identify when customer wants to stop the game"
+    },
+    {
+      "intent": "yes",
+      "examples": [
+        {
+          "text": "sii"
+        },
+        {
+          "text": "yep"
+        },
+        {
+          "text": "yes"
+        },
+        {
+          "text": "claro que si"
+        },
+        {
+          "text": "si"
+        },
+        {
+          "text": "I am sure"
+        },
+        {
+          "text": "yeah"
+        },
+        {
+          "text": "yeap"
+        },
+        {
+          "text": "Yes, I am."
+        }
+      ],
+      "description": "Intent for \"yes\""
+    },
+    {
+      "intent": "humor",
+      "examples": [
+        {
+          "text": "was joking"
+        },
+        {
+          "text": "kidding"
+        },
+        {
+          "text": "was kidding"
+        },
+        {
+          "text": "it was a joke"
+        }
+      ],
+      "description": "Intent to identify a customer makes a joke"
+    },
+    {
+      "intent": "correct_answer_Q0",
+      "examples": [
+        {
+          "text": "it is avocado"
+        },
+        {
+          "text": "Avocado"
+        },
+        {
+          "text": "es avocado"
+        },
+        {
+          "text": "of course it is avocado"
+        },
+        {
+          "text": "No :) I am kidding. Of course it is made of avocado."
+        }
+      ],
+      "description": "Intent to identify the correct answer for baseline question #0 (free item)."
+    },
+    {
+      "intent": "correct_answer_diapers_Q1",
+      "examples": [
+        {
+          "text": "Deutschland"
+        },
+        {
+          "text": "Bavaria"
+        },
+        {
+          "text": "Germany"
+        }
+      ],
+      "description": "Intent to identify the correct answer for question #1 in game with antecedent: diapers"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "products",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "tacos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "diapers",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-location",
+      "values": []
+    },
+    {
+      "entity": "person_custom",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Adilet",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-person",
+      "values": []
+    },
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "student.ie.edu",
+            "gmail.com",
+            "outlook.com"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "time": 3000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "We drink a lot of beer in Spain, but, unfortunately, Spain is wrong answer."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1562887044304",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1562888759190"
+      },
+      "conditions": "@sys-location:Spain",
+      "dialog_node": "node_6_1562889685177",
+      "previous_sibling": "node_1_1562889164752"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No, it is not."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1562887044304",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1562888759190"
+      },
+      "conditions": "@sys-location",
+      "dialog_node": "node_2_1562889202206",
+      "previous_sibling": "node_6_1562889685177"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I don't think it is name for a country.  If you don't know, just guess."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1562887044304",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_12_1562888900501"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_3_1562889260596",
+      "previous_sibling": "node_2_1562889202206"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Got it without hint! +20 points."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_5_1562887044304",
+      "metadata": {},
+      "conditions": "#correct_answer_diapers_Q2",
+      "dialog_node": "node_1_1562889164752",
+      "previous_sibling": "node_12_1562888900501"
+    },
+    {
+      "type": "standard",
+      "title": "Irrelevant answer for Q2 (before hint)",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1562887044304",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_5_1562887044304"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_12_1562888900501"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1562855332541",
+      "context": {
+        "person": "@sys-person"
+      },
+      "metadata": {},
+      "conditions": "@sys-person",
+      "event_name": "input",
+      "dialog_node": "handler_11_1562855332541",
+      "previous_sibling": "handler_12_1562855332541"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1562855332541",
+      "metadata": {},
+      "event_name": "nomatch",
+      "dialog_node": "handler_22_1562858428542",
+      "previous_sibling": "handler_11_1562855332541"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "What is your name then?"
+      },
+      "parent": "slot_10_1562855332541",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_12_1562855332541"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't get it. If you want to continue, greet me :)"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_1_1562842722495",
+      "disabled": true,
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_21_1562852720488",
+      "previous_sibling": "node_19_1562852543029"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Happy to (virtually) meet you! Do you want to get free guacamole? Just answer the question. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "What it is made of? Avocado or Tomato?",
+            "source": "https://pbs.twimg.com/media/D_MMxGSWkAAvkNe.jpg:large",
+            "description": "Product: El Sabor, aisle 1A.",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1562842722495",
+      "disabled": true,
+      "metadata": {},
+      "conditions": "#first_positive_interaction",
+      "dialog_node": "node_19_1562852543029",
+      "previous_sibling": "node_3_1562848732723"
+    },
+    {
+      "type": "standard",
+      "title": "Evaluation of answer to Q0",
+      "output": {},
+      "parent": "node_1_1562842722495",
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_3_1562848732723",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_25_1562860054099",
+      "metadata": {},
+      "event_name": "filled",
+      "dialog_node": "handler_32_1562860868528",
+      "previous_sibling": "handler_26_1562860054099"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_25_1562860054099",
+      "context": {
+        "person": "@person_custom"
+      },
+      "metadata": {},
+      "conditions": "@person_custom",
+      "event_name": "input",
+      "dialog_node": "handler_26_1562860054099",
+      "previous_sibling": "handler_27_1562860054099"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_25_1562860054099",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_27_1562860054099"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1562855045402",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "variable": "$person",
+      "conditions": "true",
+      "dialog_node": "slot_25_1562860054099",
+      "previous_sibling": "slot_10_1562855332541"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1562855045402",
+      "metadata": {
+        "_customization": {}
+      },
+      "variable": "$email",
+      "dialog_node": "slot_7_1562855128759",
+      "previous_sibling": "slot_25_1562860054099"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": []
+        }
+      },
+      "parent": "node_4_1562855045402",
+      "next_step": {
+        "behavior": "skip_all_slots"
+      },
+      "conditions": "#stop_button",
+      "event_name": "generic",
+      "dialog_node": "handler_30_1562869232324",
+      "previous_sibling": "node_29_1562868724587"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": []
+        }
+      },
+      "parent": "node_4_1562855045402",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_6_1562855128747",
+      "previous_sibling": "handler_30_1562869232324"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "OOOOHH! You are making me very sad! "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 4000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "I can’t give you free guacamole now, but I am still here to help you with everything you need. \n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1562855045402",
+      "metadata": {},
+      "conditions": "#stop_button",
+      "dialog_node": "node_33_1562869355424",
+      "previous_sibling": "node_36_1562873046029"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "AMAAAZIING!! Nice to talk to you, $person! As promised, here is your coupon for free guacamole... "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 5000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "source": "https://pbs.twimg.com/media/D_NZjklXoAIvbyA.jpg:large",
+            "description": "",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_4_1562855045402",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1562873294608"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_29_1562868724587",
+      "previous_sibling": "node_33_1562869355424"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1562855045402",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "variable": "$person",
+      "conditions": "true && @person_custom != 'Adilet'",
+      "dialog_node": "slot_10_1562855332541",
+      "previous_sibling": "handler_6_1562855128747"
+    },
+    {
+      "type": "standard",
+      "title": "Pivotal moment",
+      "output": {},
+      "parent": "node_4_1562855045402",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_39_1562873454073"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_36_1562873046029",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "oh, they are located in aisle number 7."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_39_1562873454073",
+      "metadata": {},
+      "conditions": "@products:tacos",
+      "dialog_node": "node_33_1562883421379",
+      "previous_sibling": "node_3_1562876510459"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It is okay. I will always be there to play with you. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_39_1562873454073",
+      "metadata": {},
+      "conditions": "#stop_button",
+      "dialog_node": "node_3_1562876510459"
+    },
+    {
+      "type": "standard",
+      "title": "Final evaluation of answer for Q3",
+      "output": {},
+      "parent": "node_7_1562945910550",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_13_1562947515202"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_8_1562946536036",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You have found it quite quickly!  +20 points."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1562946536036",
+      "metadata": {},
+      "conditions": "#correct_answer_diapers_Q3",
+      "dialog_node": "node_9_1562946706999",
+      "previous_sibling": "node_12_1562947096357"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nope, it is not right answer. Have you found the shelf on the picture? if not, you should try. "
+              },
+              {
+                "text": "Nope, it is not what I expected. Try again. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_8_1562946536036",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_12_1562947096357"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_11_1562946995511",
+      "previous_sibling": "node_10_1562946747079"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sad to see you go. The correct answer was \"Conservas Asensio\" from Navarra."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_8_1562946536036",
+      "metadata": {},
+      "conditions": "#stop_button",
+      "dialog_node": "node_10_1562946747079",
+      "previous_sibling": "node_9_1562946706999"
+    },
+    {
+      "type": "standard",
+      "title": "Irrelevant answer for Q3 (after hint)",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1562946536036",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_8_1562946536036"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_12_1562947096357"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I love humor! Although I can't yet understand it fully. "
+              },
+              {
+                "text": "Love jokes :) "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "time": 4000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "What is your answer then?"
+              },
+              {
+                "text": "So ? Your answer? :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1562849512560",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1562848732723"
+      },
+      "conditions": "#humor",
+      "dialog_node": "node_3_1562853910818",
+      "previous_sibling": "node_2_1562853891565"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Unfortunately, you are wrong. It was avocado."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 4000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "However, you can still get the free guacamole, so you can see that it is indeed made of avocado. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 4000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "What’s your email and name? I need it to send you the free guacamole. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1562849512560",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1562855045402"
+      },
+      "conditions": "#yes",
+      "dialog_node": "node_2_1562853891565",
+      "previous_sibling": "node_4_1562855045402"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What is your answer then?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1562849512560",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1562848732723"
+      },
+      "conditions": "#no",
+      "dialog_node": "node_1_1562874387693",
+      "previous_sibling": "node_3_1562853910818"
+    },
+    {
+      "type": "frame",
+      "title": "Registration of customer",
+      "output": {},
+      "parent": "node_6_1562849512560",
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_4_1562855045402",
+      "digress_out": "allow_all",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "standard",
+      "title": "Final evaluation of answer for Q2",
+      "output": {},
+      "parent": "node_9_1562888759190",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1562945639863"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_10_1562888798389",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Glad you changed your mind! "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 4000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "I know I am repeating myself, but what is your name and e-mail? :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_36_1562873046029",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1562855045402"
+      },
+      "conditions": "#replay_button",
+      "dialog_node": "node_40_1562873509086"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_16_1562852531019",
+      "event_name": "focus",
+      "dialog_node": "handler_18_1562852531019",
+      "previous_sibling": "handler_17_1562852531019"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_16_1562852531019",
+      "event_name": "input",
+      "dialog_node": "handler_17_1562852531019"
+    },
+    {
+      "type": "standard",
+      "title": "Antecedent: diapers (basket analysis)",
+      "output": {
+        "generic": [
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Diapers are in the aisle number 2. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 5000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Q1. By the way, tell me, which country this photo was taken in? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "source": "https://pbs.twimg.com/media/D_OfZ-8XYAE8lqg.jpg:large",
+            "description": "",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_38_1562873294608",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_31_1562881824030"
+      },
+      "conditions": "@products:diapers",
+      "dialog_node": "node_30_1562881602298"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nope. It is tough question. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1562948310477",
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_17_1562948683709",
+      "previous_sibling": "node_16_1562948613305"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Wow! You deserve +30 points."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1562948310477",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_13_1562947515202"
+      },
+      "conditions": "#correct_answer_diapers_Q3",
+      "dialog_node": "node_16_1562948613305"
+    },
+    {
+      "type": "standard",
+      "title": "Evaluation of answer for Q2",
+      "output": {},
+      "parent": "node_2_1562884948191",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1562945639863"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_5_1562887044304",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_9_1562888759190"
+    },
+    {
+      "type": "standard",
+      "title": "Ask for hint for Q2",
+      "output": {
+        "generic": [
+          {
+            "time": 4000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Here is the hint:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://pbs.twimg.com/media/D_OzLZPXoAAx91T.jpg:large",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1562884948191",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_10_1562888798389"
+      },
+      "conditions": "#hint",
+      "dialog_node": "node_9_1562888759190"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else after welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't get it. If you want to continue, just greet me :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1562842722495"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_22_1562852975659",
+      "previous_sibling": "node_1_1562842722495"
+    },
+    {
+      "type": "standard",
+      "title": "Interaction #0",
+      "output": {
+        "generic": [
+          {
+            "time": 5000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Happy to (virtually) meet you! Do you want to get free guacamole? Just answer the question. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "What is made of: Avocado or Tomato? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "source": "https://pbs.twimg.com/media/D_MMxGSWkAAvkNe.jpg:large",
+            "description": "Product: El Sabor, aisle 1A.",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#first_positive_interaction",
+      "dialog_node": "node_1_1562842722495",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "Evaluation of answer for Q1",
+      "output": {},
+      "parent": "node_30_1562881602298",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1562884948191"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_31_1562881824030",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1562848732723",
+      "dialog_node": "slot_16_1562852531019",
+      "previous_sibling": "handler_15_1562852531007"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Are you sure?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1562848732723",
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_23_1562853656978",
+      "previous_sibling": "node_20_1562852591063"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_3_1562848732723",
+      "event_name": "focus",
+      "dialog_node": "handler_15_1562852531007",
+      "previous_sibling": "node_23_1562853656978"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Yes! It was easy, right? \n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 3000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "What’s your e-mail and name? I need it to send you free guacamole. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1562848732723",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1562855045402"
+      },
+      "conditions": "#correct_answer_Q0",
+      "dialog_node": "node_20_1562852591063",
+      "previous_sibling": "node_6_1562849512560"
+    },
+    {
+      "type": "standard",
+      "title": "Sure or not in answer for Q0",
+      "output": {},
+      "parent": "node_3_1562848732723",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_6_1562849512560",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "Evaluation of answer for Q3",
+      "output": {},
+      "parent": "node_6_1562945639863",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1562945910550"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_14_1562948310477",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_7_1562945910550"
+    },
+    {
+      "type": "standard",
+      "title": "Ask for hint for Q3",
+      "output": {
+        "generic": [
+          {
+            "time": 4000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Attention! Hint: you can find it here. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://pbs.twimg.com/media/D_SLdU-WwAA06gX.jpg:large",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_6_1562945639863",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_8_1562946536036"
+      },
+      "conditions": "#hint",
+      "dialog_node": "node_7_1562945910550"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I don't think it is name for a country.  If you don't know, just guess."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1562888798389",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1562889822130"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_8_1562889870874",
+      "previous_sibling": "node_4_1562889517326"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No,  it is actually the Czech Republic! -2 points."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1562888798389",
+      "metadata": {},
+      "conditions": "@sys-location",
+      "dialog_node": "node_4_1562889517326",
+      "previous_sibling": "node_11_1562888819830"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Got it, but with a hint. +10 points."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1562888798389",
+      "metadata": {},
+      "conditions": "#correct_answer_diapers_Q2",
+      "dialog_node": "node_11_1562888819830",
+      "previous_sibling": "node_7_1562889822130"
+    },
+    {
+      "type": "standard",
+      "title": "Irrelevant answer for Q2 (after hint)",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1562888798389",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_10_1562888798389"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_7_1562889822130",
+      "previous_sibling": "node_6_1562945639863"
+    },
+    {
+      "type": "standard",
+      "title": "Q3",
+      "output": {
+        "generic": [
+          {
+            "time": 5000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Last question for today. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Give me the name of the brand? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://pbs.twimg.com/media/D_SPEfGWwAE2gk0.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_10_1562888798389",
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_6_1562945639863"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": []
+        }
+      },
+      "parent": "slot_7_1562855128759",
+      "metadata": {},
+      "event_name": "filled",
+      "dialog_node": "handler_19_1562877965686",
+      "previous_sibling": "handler_8_1562855128759"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1562855128759",
+      "context": {
+        "email": "@email"
+      },
+      "metadata": {},
+      "conditions": "@email",
+      "event_name": "input",
+      "dialog_node": "handler_8_1562855128759",
+      "previous_sibling": "handler_9_1562855128759"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "What is your e-mail then?"
+      },
+      "parent": "slot_7_1562855128759",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_9_1562855128759"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No, it was actually Germany (Oktoberfest)! Sorry, no points at this moment."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_31_1562881824030",
+      "metadata": {},
+      "conditions": "@sys-location",
+      "dialog_node": "node_35_1562883891713",
+      "previous_sibling": "node_34_1562883879489"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Yes! +10 points for you. Now you have free guacamole and 10 points to use later on. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_31_1562881824030",
+      "metadata": {},
+      "conditions": "#correct_answer_diapers_Q1",
+      "dialog_node": "node_34_1562883879489",
+      "previous_sibling": "node_4_1562886846661"
+    },
+    {
+      "type": "standard",
+      "title": "Irrelevant answer for Q1",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_31_1562881824030",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_31_1562881824030"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_4_1562886846661",
+      "previous_sibling": "node_2_1562884948191"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I don't think it is name for a country.  If you don't know, just guess. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_31_1562881824030",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1562886846661"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_3_1562886413923",
+      "previous_sibling": "node_35_1562883891713"
+    },
+    {
+      "type": "standard",
+      "title": "Q2",
+      "output": {
+        "generic": [
+          {
+            "time": 5000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Q2. Talking about Germany, what country is the world’s largest consumer of beer? :) "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_31_1562881824030",
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_2_1562884948191"
+    },
+    {
+      "type": "standard",
+      "title": "End of the game",
+      "output": {
+        "generic": [
+          {
+            "time": 5000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "We have reached the end of the today's game. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 3000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Find your total number of points in El Cortes Ingles website/app. You can login with the e-mail you provided at the beginning. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Have a nice day!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_13_1562947515202",
+      "previous_sibling": "node_39_1562873454073"
+    },
+    {
+      "type": "standard",
+      "title": "Non-game related questions",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "anything_else",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_39_1562873454073",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_38_1562873294608"
+    },
+    {
+      "type": "standard",
+      "title": "Games for registered users",
+      "output": {
+        "generic": [
+          {
+            "time": 5000,
+            "typing": false,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "GREAT! Let's continue.  "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "I am here to help you with whatever you need! "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "What are you looking for?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_38_1562873294608",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "time": 5000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Hola! Soy Don Cupón! I am here to help you earn points and find what you need and more!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "workspace_id": "4ff93102-6fc9-442d-ba22-75e61ced2bf5",
+  "counterexamples": [
+    {
+      "text": "Adilet"
+    },
+    {
+      "text": "adilet.gaparov@student.ie.edu"
+    },
+    {
+      "text": "client@gmail.com"
+    },
+    {
+      "text": "It must be Belgium!"
+    },
+    {
+      "text": "My wife told me to buy diapers."
+    },
+    {
+      "text": "USA?"
+    }
+  ],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}

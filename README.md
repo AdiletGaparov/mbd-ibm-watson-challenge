@@ -1,5 +1,7 @@
 Repository for the work done in my Masters program, term 1, competition "IBM Watson Challenge". Master in Business Analytics and Big Data, April 2019 intake. Instituto de Empresa, School of Human Sciences and Technology. Madrid, Spain. 
 
+The repository contains Node.js application, that serves as an interface for chatbot developed in IBM Watson. 
+
 ## Configuring the application
 
 1. Import IBM Watson skill to your IBM Watson assistant instance. JSON file is located here:
